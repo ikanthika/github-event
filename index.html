@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Event 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #171717;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #58a6ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #101827, #253b60);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #58a6ff;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #238636;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+        }
+
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #172b4d;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000012;
+        }
+
+        .card h3 {
+            color: #0969da;
+            margin-bottom: 10px;
+        }
+
+        .event-info {
+            background: #eaf2ff;
+        }
+
+        form {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000012;
+        }
+
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #171717;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>GitHub Event 2026</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#activities">Activities</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Explore the World of <span>GitHub</span></h1>
+
+        <p>
+            Learn Git and GitHub, collaborate with developers,
+            manage projects, and discover the power of open-source
+            development.
+        </p>
+
+        <a href="#register" class="btn">Join the Event</a>
+    </section>
+
+    <section id="about">
+        <h2>About the Event</h2>
+
+        <p>
+            The GitHub Event is an opportunity for students to learn
+            version control, create repositories, upload projects,
+            and work together using GitHub.
+        </p>
+    </section>
+
+    <section class="event-info">
+        <h2>Event Information</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📅 Date</h3>
+                <p>Enter your event date here</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Venue</h3>
+                <p>Enter your college name here</p>
+            </div>
+
+            <div class="card">
+                <h3>👨‍💻 Participants</h3>
+                <p>Students and beginners in coding</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>What You Will Learn</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Git Basics</h3>
+                <p>Understand commits, branches, and version control.</p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Repository</h3>
+                <p>Create a repository and upload your project files.</p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub Pages</h3>
+                <p>Learn how to publish an HTML website online.</p>
+            </div>
+
+            <div class="card">
+                <h3>Team Collaboration</h3>
+                <p>Learn how developers share and improve code together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Event Registration</h2>
+
+        <p>Fill in your details to prepare your registration.</p>
+
+        <form id="registrationForm">
+            <input type="text" id="name"
+                placeholder="Enter your name" required>
+
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+
+            <input type="text" id="college"
+                placeholder="Enter your college name" required>
+
+            <button type="submit" class="btn">
+                Submit Registration
+            </button>
+
+            <p id="message" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 GitHub Event | Learn, Build, Collaborate</p>
+    </footer>
+
+    <script>
+        document.getElementById("registrationForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById("name").value;
+
+                document.getElementById("message").textContent =
+                    "Thank you, " + name +
+                    "! Your form is filled, but registration has not been saved.";
+
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
